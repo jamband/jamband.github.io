@@ -16,14 +16,14 @@
       body {
         background: #13111a;
         color: #b7b4c7;
-        display: flex;
-        flex-direction: column;
+        display: grid;
         font-family: Helvetica, Arial, sans-serif;
         font-size: 1.25rem;
-        justify-content: center;
+        line-height: 1.4;
         margin: 0 auto;
         min-height: 92vh;
         padding: 1rem;
+        place-items: center;
       }
 
       h1 {
@@ -35,7 +35,7 @@
 
       p {
         font-size: 1rem;
-        margin: 0.25rem 0 1.5rem 0;
+        margin: 0.15rem 0 1.5rem 0;
         padding: 0;
       }
 
@@ -43,6 +43,26 @@
         color: #94c1f2;
         padding: 0.325rem 0;
         text-decoration: none;
+      }
+
+      a:active {
+        color: #5099ea;
+      }
+
+      @media (hover: hover) and (pointer: fine) {
+        a:hover {
+          color: #5099ea;
+        }
+      }
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        margin-bottom: 0.3rem;
       }
 
       hr {
@@ -53,18 +73,23 @@
     </style>
   </head>
   <body>
-    <h1>tomoki morita</h1>
-    <p>web developer</p>
-    <a href="https://jamband.github.io/blog/">blog</a>
-    <a href="https://github.com/jamband">github</a>
-    <a href="https://twitter.com/livejam_db">twitter</a>
-    <a href="https://zenn.dev/jamband">zenn</a>
-    <a href="https://qiita.com/livejam_db">qiita</a>
-    <a href="https://stackoverflow.com/users/678947/jamband">stack overflow</a>
-    <a href="https://jamband.hatenablog.com/archive">old blog</a>
-    <hr>
-    <a href="https://plusarchive.com">plusarchive</a>
-    <a href="https://jamband.github.io/tapes/">tapes</a>
-    <a href="https://jamband.github.io/denene/">denene</a>
+    <main>
+      <h1>tomoki morita</h1>
+      <p>web developer</p>
+      <ul>
+        <li><a href="https://jamband.github.io/about/">about me</a></li>
+        <li><a href="https://jamband.github.io/blog/">blog</a></li>
+        <li><a href="https://github.com/jamband">github</a></li>
+        <li><a href="https://twitter.com/livejam_db">twitter</a></li>
+        <li><a href="https://zenn.dev/jamband">zenn</a></li>
+        <li><a href="https://qiita.com/livejam_db">qiita</a></li>
+        <li><a href="https://stackoverflow.com/users/678947/jamband">stack overflow</a></li>
+        <li><a href="https://jamband.hatenablog.com/archive">old blog</a></li>
+        <li><hr></li>
+        <li><a href="https://plusarchive.com">plusarchive</a></li>
+        <li><a href="https://jamband.github.io/tapes/">tapes</a></li>
+        <li><a href="https://jamband.github.io/denene/">denene</a></li>
+      </ul>
+    </main>
   </body>
 </html>
