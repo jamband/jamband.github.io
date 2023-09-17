@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <meta name="description" content="tomoki morita">
+    <meta name="description" content="i'm tomoki morita and i'm a web developer">
     <title>tomoki morita</title>
     <style>
       *,
@@ -12,29 +12,41 @@
         box-sizing: border-box;
       }
 
-      html,
+      html {
+        -moz-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+        line-height: 1.5;
+        text-size-adjust: 100%
+      }
+
       body {
         background: #13111a;
         color: #b7b4c7;
         display: grid;
         font-family: system-ui, Arial, sans-serif;
-        font-size: 1.25rem;
         font-weight: bold;
         height: 100dvh;
-        line-height: 1.4;
+        line-height: inherit;
         margin: 0;
         place-items: center;
       }
 
+      @media (height < 768px) and (orientation: landscape) {
+        body {
+          height: auto;
+          margin: 3rem 0;
+        }
+      }
+
       h1 {
         color: #eceff4;
-        font-size: 2rem;
+        font-size: 2.5rem;
         margin: 0;
       }
 
       p {
-        font-size: 1rem;
-        margin: 0.15rem 0 1.5rem 0;
+        font-size: 1.25rem;
+        margin: 0.15rem 0 0;
       }
 
       a {
@@ -46,10 +58,11 @@
       ul {
         display: flex;
         flex-direction: column;
+        font-size: 1.5rem;
+        gap: 0.55rem;
         list-style: none;
-        margin: 0;
+        margin: 2rem 0 0;
         padding: 0;
-        row-gap: 0.55rem;
       }
     </style>
   </head>
