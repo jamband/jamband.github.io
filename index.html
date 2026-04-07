@@ -27,10 +27,8 @@
         line-height: inherit;
         margin: 0;
         place-items: center;
-      }
 
-      @media (height < 768px) and (orientation: landscape) {
-        body {
+        @media (height < 768px) and (orientation: landscape) {
           height: auto;
           margin: 3rem 0;
         }
@@ -51,11 +49,11 @@
         color: #94c1f2;
         padding: 0.325rem 0;
         text-decoration: none;
-      }
 
-      a:focus {
-        outline: 2px solid currentcolor;
-        outline-offset: 0.1rem;
+        &:focus {
+          outline: 2px solid currentcolor;
+          outline-offset: 0.1rem;
+        }
       }
 
       ul {
